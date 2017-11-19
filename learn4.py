@@ -14,3 +14,6 @@ bsObj = BeautifulSoup(html.read(),"html.parser")
 images = bsObj.findAll("img",{"src":re.compile("\.\.\/img\/gifts/img.*\.jpg")})
 for image in images:
     print(image["src"])
+
+#对于一个标签对象，通过myTag.attrs获取它的全部树形。
+#获取资源位置src,myImgTag.attrs["src"]
