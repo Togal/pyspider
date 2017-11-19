@@ -12,3 +12,5 @@ bsObj = BeautifulSoup(html.read(),"html.parser")
 
 for sibling in bsObj.find("table",{"id":"giftList"}).tr.next_siblings:
     print(sibling)
+
+print("price: "+bsObj.find("img",{"src":"../img/gitfs/img1.jpg"}).parent.previous_sibling.get_text())
